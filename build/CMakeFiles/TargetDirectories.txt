@@ -1,0 +1,3 @@
+/home/devopstim/Documents/vpn_free/build/CMakeFiles/vpn_free.dir
+/home/devopstim/Documents/vpn_free/build/CMakeFiles/edit_cache.dir
+/home/devopstim/Documents/vpn_free/build/CMakeFiles/rebuild_cache.dir

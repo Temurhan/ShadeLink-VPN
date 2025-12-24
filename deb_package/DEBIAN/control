@@ -1,0 +1,6 @@
+Package: shadelink
+Version: 1.0
+Architecture: amd64
+Maintainer: Reimbayew Temur
+Depends: libssl-dev, libncursesw6, net-tools
+Description: ShadeLink VPN - Professional Stealth Tunneling Tool.

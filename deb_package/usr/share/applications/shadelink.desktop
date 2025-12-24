@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ShadeLink VPN
+Comment=Stealth VPN by ShadeLink Team
+Exec=x-terminal-emulator -e bash -c "pkexec /usr/bin/shadelink; read"
+Icon=/usr/share/pixmaps/shadelink.png
+Terminal=false
+Type=Application
+Categories=Network;Security;

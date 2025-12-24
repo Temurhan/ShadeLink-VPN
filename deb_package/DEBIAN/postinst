@@ -1,0 +1,4 @@
+#!/bin/bash
+chmod +x /usr/bin/shadelink
+setcap cap_net_admin,cap_net_raw=eip /usr/bin/shadelink
+echo "ShadeLink VPN has been installed successfully!"

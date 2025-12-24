@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/vpn_free.dir/link.d CMakeFiles/vpn_free.dir/main.cpp.o CMakeFiles/vpn_free.dir/src/core/TunInterface.cpp.o CMakeFiles/vpn_free.dir/src/network/SocketHandler.cpp.o CMakeFiles/vpn_free.dir/src/core/EventManager.cpp.o CMakeFiles/vpn_free.dir/src/crypto/Encryptor.cpp.o -o vpn_free  /usr/lib/x86_64-linux-gnu/libcrypto.so -lncursesw -ltinfo
