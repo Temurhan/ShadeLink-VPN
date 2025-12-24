@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ShadeLink VPN
+Comment=Secure Stealth Tunnel by Tem Dev
+# pkexec вызовет графическое окно пароля, а bash -c не даст окну закрыться сразу
+Exec=gnome-terminal -- title "ShadeLink Console" -- bash -c "pkexec /home/devopstim/Documents/vpn_free/build/vpn_free; exec bash"
+# Используем путь к твоей новой иконке (убедись, что файл icon.png в этой папке)
+Icon=/home/devopstim/Documents/vpn_free/icon.png
+Path=/home/devopstim/Documents/vpn_free/build/
+Terminal=true
+Categories=Network;Security;
+Keywords=vpn;stealth;proxy;

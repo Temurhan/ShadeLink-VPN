@@ -1,0 +1,5 @@
+build/
+deb_package/
+*.deb
+*.o
+vpn_free
