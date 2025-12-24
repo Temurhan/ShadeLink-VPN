@@ -1,5 +1,6 @@
-build/
-deb_package/
-*.deb
+.idea/
+cmake-build-debug/
+cmake-build-release/
+shadelink
 *.o
-vpn_free
+config.txt

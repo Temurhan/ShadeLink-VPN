@@ -6,17 +6,19 @@
 
 class Encryptor {
 public:
-    Encryptor(const std::vector<uint8_t>& key);
+    explicit Encryptor(const std::vector<uint8_t>& key);
     ~Encryptor();
 
-    // Шифрует и добавляет случайный шум (Padding)
+    // Шифрование (AES-256-GCM)
     size_t encrypt(const uint8_t* plaintext, size_t plaintext_len, uint8_t* ciphertext, size_t max_out);
 
-    // Расшифровывает и отбрасывает шум
+    // Расшифровка
     size_t decrypt(const uint8_t* ciphertext, size_t ciphertext_len, uint8_t* plaintext, size_t max_out);
 
 private:
+    EVP_CIPHER_CTX *en_ctx;
+    EVP_CIPHER_CTX *de_ctx;
     std::vector<uint8_t> _key;
-    std::vector<uint8_t> _nonce;
-    std::mt19937 _rng; // Для генерации шума
+    const size_t IV_LEN = 12; // Стандарт для GCM
+    const size_t TAG_LEN = 16;
 };
