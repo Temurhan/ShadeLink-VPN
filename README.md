@@ -1,19 +1,22 @@
-# 🛡️ ShadeLink VPN
+# ShadeLink VPN 🛡️
+**Author:** Reimbayew Temur
 
-**ShadeLink** — это высокопроизводительный Stealth VPN-туннель, написанный на C++17. Он использует шифрование OpenSSL и виртуальные сетевые интерфейсы TUN для обеспечения приватности и обхода DPI.
+ShadeLink is a lightweight, high-performance VPN tunnel for Linux written in C++. It features a real-time terminal dashboard (TUI) to monitor your traffic and connection status.
 
-## ✨ Особенности
-* **TUI Dashboard:** Интерактивный интерфейс на базе NCurses.
-* **Stealth Protocol:** Шифрование трафика (AES-256-GCM) для защиты от перехвата.
-* **Linux Native:** Полная интеграция с сетевым стеком через TUN/TAP.
-* **Easy Install:** Готовый `.deb` пакет для Kali Linux и Debian.
+## Key Features
+* **AES-256-GCM Encryption:** Secure data transmission using OpenSSL.
+* **TUI Dashboard:** Live monitoring of TX/RX traffic, logs, and connection status using Ncurses.
+* **Low Latency:** Built with `epoll` for efficient event-driven networking.
+* **Easy Installation:** Provided as a Debian package for Kali Linux and Ubuntu.
 
-## 👤 Автор
-**Reimbayew Temur** (DevOps & Security Enthusiast)
+## Preview
+![ShadeLink Dashboard](https://github.com/Temurhan/ShadeLink-VPN/raw/main/preview.png)
 
-## 🚀 Быстрый старт
+## Installation
 
-### Установка (Debian/Kali)
-```bash
-sudo dpkg -i shadowlink_1.0.deb
-sudo apt install -f
+1. **Download the latest release:**
+   Go to the [Releases](https://github.com/Temurhan/ShadeLink-VPN/releases) page and download `shadelink_1.0.deb`.
+
+2. **Install the package:**
+   ```bash
+   sudo apt install ./shadelink_1.0.deb
